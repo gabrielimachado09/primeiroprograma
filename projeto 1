@@ -1,0 +1,48 @@
+ int escolha;
+    float pagamento;
+    float troco;
+    float pedagio;
+    printf("selecione seu veiculo:\n");
+    printf("~~~~~~~~~~~~~~~~~~~\n");
+    printf("1 - carro\t R$ 5,00\n");
+    printf("2 - moto\t R$ 10,00\n");
+    printf("3 - caminhao\t R$ 15,00\n");
+    printf("4 - onibus\t R$ 20,00\n");
+    printf("escolha:");
+    scanf("%d" , &escolha);
+    
+    printf("a escolha foi: %d\n" , escolha); 
+    
+    
+    if (escolha > 4){
+        printf ("erro!! veiculo nao encontrado na lista, programa encerrado");
+    }
+    
+    if (escolha == 1){
+        pedagio = 5.00;
+        printf ("o valor do seu pedagio e 5.00");
+    }
+    
+    if (escolha == 2){
+        pedagio = 10.00;
+        printf ("o valor do seu pedagio e 10.00");
+    }
+    
+    if (escolha == 3){
+        pedagio =15.00;
+        printf ("o valor do seu pedagio e 15.00");
+    }
+    
+    if (escolha == 4){
+        pedagio = 20.00;
+        printf ("o valor do seu pedagio e 20.00");
+    }
+    
+    printf ("\n pague aqui:");
+    scanf ("%f" , &pagamento);
+    pagamento < pedagio;
+    printf("erro!! saldo insuficiente");
+    return 0;
+    troco = pagamento - pedagio;
+    printf("o seu troco e: %.2f" , troco);
+    return 0;
